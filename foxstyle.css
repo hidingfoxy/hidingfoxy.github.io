@@ -1,0 +1,80 @@
+body {
+	padding: 1em; 
+	margin: 0;
+	font-family: Century Gothic;
+}
+.container {
+	display: flex;  
+	flex-flow: row wrap;
+	font-weight: bold;
+	text-align: center;
+}
+.container > * {
+	flex: 1 100%;
+}
+.header {
+	background: lightblue;
+	order: 1;
+}
+.pagecontent {
+	flex-flow: row wrap;
+	order: 2;
+	display: flex;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.aside {
+	background: yellow;
+	order: 1;
+	width: 250px;
+	display: flex;
+	flex-flow: column;
+}
+.navblock {
+	width: inherit;
+	background: gold;
+	height: 40px;
+	height: 40px;
+}
+.navblock button {
+	border: none;
+	background: none;
+	height: inherit;
+	width: inherit;
+	cursor: pointer;
+	font-family: Century Gothic;
+	font-weight: bold;
+	padding: 0px;
+}
+.navblock input {
+	width: inherit;
+	background: #E3BF00;
+	text-align: center;
+	font-family: Century Gothic;
+	border: none;
+	height: inherit;
+}
+.main {
+	background: orange;
+	order: 2;
+	width: 650px;
+	float: right;
+}
+.footer {
+	background: green;
+	order: 3;
+}
+@media all and (max-width: 950px) {
+	.pagecontent { flex-direction: column; }
+	.aside { width: inherit; order: 1; flex-flow: row wrap;}
+	.main { width: inherit ;order: 2; }
+	.navblock { align-self: center; flex-grow: 1; height: inherit}
+	.aside { flex-flow: row; align-items: center; height: 50px;}
+}
+.icon {
+	height: auto;
+	width: 300px;
+	float: center;
+	border: 2px solid black;
+	border-radius: 50%;
+}
