@@ -1,5 +1,4 @@
 body {
-	padding: 1em; 
 	margin: 0;
 	font-family: Century Gothic;
 }
@@ -13,8 +12,9 @@ body {
 	flex: 1 100%;
 }
 .header {
-	background: lightblue;
+	background: #333333;
 	order: 1;
+	height: 100%;
 }
 .pagecontent {
 	flex-flow: row wrap;
@@ -70,11 +70,11 @@ body {
 	.main { width: inherit ;order: 2; }
 	.navblock { align-self: center; flex-grow: 1; height: inherit}
 	.aside { flex-flow: row; align-items: center; height: 50px;}
+	.icon { max-height: 200px; max-width: 200px; margin: 10px auto;}
 }
 .icon {
-	height: auto;
-	width: 300px;
+	height: 480px;
+	width: 480px;
 	float: center;
-	border: 2px solid black;
-	border-radius: 50%;
+	margin: 60px auto;
 }
