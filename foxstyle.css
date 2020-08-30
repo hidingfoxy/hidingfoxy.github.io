@@ -81,7 +81,7 @@ body {
 .main {
 	background: #C9AF95;
 	order: 2;
-	width: 100%;
+	max-width: 800px;
 	float: right;
 	min-height: 500px;
 	border: #FFE6C7 25px solid;
@@ -105,9 +105,10 @@ body {
 	text-align: left;
 	padding: 10px;
 	margin-bottom: 50px;
+	width: inherit;
 }
-.block img {
-	border: 2px solid black;
+.blocks img {
+	width: 100%;
 }
 .time {
 	float: right;
