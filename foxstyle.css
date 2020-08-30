@@ -1,6 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'Century Gothic Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Century Gothic Regular'), url('GOTHIC.woff') format('woff');
+}
 body {
 	margin: 0;
-	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-family: 'Century Gothic Regular';
 	background: url("img/stars.png") center repeat-y, url("img/bg.png") repeat;
 }
 .container {
@@ -63,7 +72,7 @@ body {
 }
 .navigate a {
 	text-decoration: none;
-	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-family: 'Century Gothic Regular';
 	color: #FFE6C7;
 }
 .navblock a:hover {
