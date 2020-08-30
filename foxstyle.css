@@ -1,75 +1,89 @@
 body {
 	margin: 0;
-	font-family: Century Gothic;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	background: url("img/stars.png") center repeat-y, url("img/bg.png") repeat;
 }
 .container {
 	display: flex;  
 	flex-flow: row wrap;
-	font-weight: bold;
+	font-weight: normal;
 	text-align: center;
 }
 .container > * {
 	flex: 1 100%;
 }
 .header {
-	background: #333333;
 	order: 1;
 	height: 100%;
 }
 .pagecontent {
 	flex-flow: row wrap;
-	order: 2;
+	order: 3;
 	display: flex;
-	max-width: 900px;
+	max-width: 800px;
 	margin: 0 auto;
 }
-.aside {
-	background: yellow;
+.navigate {
 	order: 1;
-	width: 250px;
+	width: 800px;
 	display: flex;
-	flex-flow: column;
+	height: 50px;
+	margin-bottom: 35px;
+	justify-content: space-evenly;
+}
+.search {
+	order: 2;
+	height: 50px;
+	width: 800px;
+	background: #C9AF95;
+	margin-bottom: 70px;
+	display: flex;
+	align-items: center;
+}
+.search input {
+	height: inherit;
+	width: inherit;
+	background: none;
+	color: #3F3E3E;
+	border: none;
+	font-size: 18px;
 }
 .navblock {
-	width: inherit;
-	background: gold;
-	height: 40px;
-	height: 40px;
+	height: inherit;
+	background: none;
+	display: flex;
 }
 .navblock button {
 	border: none;
 	background: none;
 	height: inherit;
 	width: inherit;
-	cursor: pointer;
-	font-family: Century Gothic;
-	font-weight: bold;
+	font-size: 18px;
 	padding: 0px;
 }
-.navblock input {
-	width: inherit;
-	background: #E3BF00;
-	text-align: center;
-	font-family: Century Gothic;
-	border: none;
-	height: inherit;
+.navigate a {
+	text-decoration: none;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	color: #FFE6C7;
+}
+.navblock a:hover {
+	color: #D35F00;
 }
 .main {
-	background: orange;
+	background: #C9AF95;
 	order: 2;
-	width: 650px;
+	width: 100%;
 	float: right;
+	min-height: 500px;
+	border: #FFE6C7 25px solid;
 }
 .footer {
-	background: green;
 	order: 3;
+	color: #FFE6C7;
 }
 @media all and (max-width: 950px) {
 	.pagecontent { flex-direction: column; }
-	.aside { width: inherit; order: 1; flex-flow: row wrap;}
 	.main { width: inherit ;order: 2; }
-	.navblock { align-self: center; flex-grow: 1; height: inherit}
-	.aside { flex-flow: row; align-items: center; height: 50px;}
 	.icon { max-height: 200px; max-width: 200px; margin: 10px auto;}
 }
 .icon {
@@ -77,4 +91,16 @@ body {
 	width: 480px;
 	float: center;
 	margin: 60px auto;
+}
+.blocks {
+	text-align: left;
+	padding: 10px;
+	margin-bottom: 50px;
+}
+.block img {
+	border: 2px solid black;
+}
+.time {
+	float: right;
+	font-style: italic;
 }
