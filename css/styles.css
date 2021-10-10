@@ -254,7 +254,7 @@ h2 {
 	object-fit: cover;
 	width: 780px;
 	justify-content: space-between;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	text-align: center;
 	margin-top: 100px;
 }
@@ -278,7 +278,7 @@ h2 {
 	object-fit: cover;
 	width: 780px;
 	justify-content: center;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 .cardbox {
 	display: flex;
@@ -377,9 +377,9 @@ h2 {
 	height: 30px;
 	margin-top: -5px;
 	-webkit-box-align: start;
-	-webkit-align-items: flex-start;
+	-webkit-align-items: center;
 	-ms-flex-align: start;
-	align-items: flex-start;
+	align-items: center;
 }
 .social-media-logo {
 	margin-right: 10px;
