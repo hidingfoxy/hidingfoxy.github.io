@@ -531,7 +531,4 @@ h2 {
 	.tabs-menu {
 		font-size: 3vw;
 	}
-	.card {
-		line-height: 5vw;
-	}
 }
