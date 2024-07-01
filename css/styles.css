@@ -33,6 +33,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav li {
@@ -280,6 +281,10 @@ p {
         flex: 50%;
         max-width: 50%;
     }
+
+    .onetab {
+        max-width: 550px;
+    }
 }
 
 
@@ -287,5 +292,28 @@ p {
     .imgcolumn {
         flex: 100%;
         max-width: 100%;
+    }
+
+    .onetab {
+        max-width: 90vw;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+    }
+
+    .contitem {
+        max-width: 100%;
+    }
+
+    .contitem input {
+        height: auto;
+        max-width: inherit;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .onetab {
+        max-width: 85vw;
     }
 }
