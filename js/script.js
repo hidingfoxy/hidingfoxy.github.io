@@ -53,7 +53,7 @@ function contclose(elem) {
 var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("modalimg");
 var captionText = document.getElementById("caption");
-var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close")[0];
 
 function modalopen(img){
 	modal.style.display = "block";
@@ -61,6 +61,8 @@ function modalopen(img){
 	captionText.innerHTML = img.alt;
 }
 
-span.onclick = function() {
-	modal.style.display = "none";
+if (span1 !== undefined && span1 !== null) {
+	span1.onclick = function() {
+		modal.style.display = "none";
+	}
 } 
