@@ -2,25 +2,18 @@
 <html lang="en">
     <head>
     <meta charset="utf-8" />
-    <title>HidingFox' corner of the Internet 🏳️‍🌈</title>
-    <meta content="HidingFox' cool and dope website" name="description" />
-    <meta content="HidingFox" property="og:title">
-    <meta content="HidingFox' cool and dope website" property="og:description" />
-    <meta content="HidingFox" property="twitter:title" />
-    <meta content="HidingFox' cool and dope website" property="twitter:description" />
-	<meta property="og:image" content="images/embed.jpg">
+    <title>hidingfox's cool and dope website 🏳️‍🌈</title>
+	<link rel="icon" href="images\icons\favicon.ico" />
+    <meta property="og:title" content="hidingfox's cool and dope website 🏳️‍🌈" />
+    <meta property="og:description" content="just a website to show off all the garbage that i produced" name="description" />
+	<meta property="og:image" content="images/icons.foxitself.png" />
     <meta property="og:type" content="website" />
-    <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-	<link rel="icon" href="\images\favicon.png" />
+	<meta name="color-scheme" content="dark" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0
     /modern-normalize.min.css" rel="stylesheet" />
     <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
-    <link href="images/webclip.png" rel="apple-touch-icon" sizes="256x256"/>
-    <link href="images/webclip128.png" rel="shortcut icon" sizes="128x128"/>
-    <link href="images/webclip64.png" rel="shortcut icon" sizes="64x64"/>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="7c83a9d2-2747-4920-8cb8-18dd7c3a2234"></script>
     </head>
 
@@ -32,366 +25,472 @@
                 <p>Enable it :3  I use Umami to track how many visitor I get, just for fun...</p>
             </div>
         </noscript>
+		<div style="display: none">; DROP ALL TABLES; ;</div> <!-- haha!; DROP ALL TABLES; -->
         <header>
-            <input type="image" src="images/lightmoon.png" style="height: 2em;" id="moon" class="darkmoon" onclick="NightMode()"/>
+            <img src="images/icons/darkmoon.png" style="height: 2em;"/>
         </header>
-        <nav>
-            <ul>
-                <li><button href="#about" id="Nav0" onclick=(tab(0)) class="tab-link current-link">home🏠</button></li>
-                <li><button href="#videos" id="Nav1" onclick=(tab(1)) class="tab-link">videos📹</button></li>
-                <li><button href="#art" id="Nav2" onclick=(tab(2)) class="tab-link">art🎨</button></li>
-                <li><button href="#games" id="Nav3" onclick=(tab(3)) class="tab-link">games🎮</button></li>
-                <li><button href="#projects" id="Nav4" onclick=(tab(4)) class="tab-link">projects📜</button></li>
-                <li><button href="#links" id="Nav5" onclick=(tab(5)) class="tab-link">links🔖</button></li>
-            </ul>
-        </nav>
-        <main>
-			<div style="display: none">; DROP ALL TABLES; ;</div> <!-- haha!; DROP ALL TABLES; -->
-            <div id="Tab0" class="onetab tab-active">
-				<h2>💖 hello, im hidingfox 🦊</h2>
-                <p>im a gurl from Russia 🤍💙🤍 </p>
-                <p>i play games 🕹<br>i <i>sometimes</i> make games 🎮<br>i paint 🎨<br>draw 🖋<br>make videos 🎥 <span style="color: inherit; opacity: 30%;">(usually about gaming 🎥🕹)</span><br>i play guitar 🎸<br>and i make websites sometimes 🕸</p>
-                <p> </p>
-                <p> </p>
-                <p> </p>
-				<label for=cb style="opacity: 50%; cursor:pointer;text-decoration:underline;">tell me what you think :3</label>
-				<input type='checkbox' style='display: none' id=cb checked />
-				<div>
-				<span style="font-size:10px; opacity:60%">(If nothing appeared then your browser blocked remote content~)</span>
-					<script>
-						var idcomments_acct = '4cd9901427c297a6dd0c0b1ee9e00213';
-						var idcomments_post_id;
-						var idcomments_post_url;
-					</script>
-					<span id="IDCommentsPostTitle" style="display:none"></span>
-					<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+		<div class="navmain">
+			<nav>
+				<ul>
+					<li><button href="#about" id="Nav0" onclick=(tab(0)) class="tab-link current-link">home🏠</button></li>
+					<li><button href="#links" id="Nav1" onclick=(tab(1)) class="tab-link notcurrent-link">links🔖</button></li>
+					<li><button href="#links" id="Nav2" onclick=(tab(2)) class="tab-link notcurrent-link">music🎵</button></li>
+					<li><button href="#videos" id="Nav3" onclick=(tab(3)) class="tab-link notcurrent-link">videos📹</button></li>
+					<li><button href="#art" id="Nav4" onclick=(tab(4)) class="tab-link notcurrent-link">art🎨</button></li>
+					<li><button href="#games" id="Nav5" onclick=(tab(5)) class="tab-link notcurrent-link">games🎮</button></li>
+					<li><button href="#projects" id="Nav6" onclick=(tab(6)) class="tab-link notcurrent-link">projects📜</button></li>
+				</ul>
+			</nav>
+			<main>
+				<!-- main tab! -->
+				<div id="Tab0" class="onetab tab-active" style="text-align: center; ">
+					<img src="images/senkotail.gif" alt="gif of Senko-san combing her tail" style="display: block; margin: auto;">
+					<h4>💖 hello, im hidingfox 🦊</h4>
+					<p><span>⋆☾ˏˋ</span></p>
+					<p style="text-align: center; opacity: 50%;" >im a girl from <u>russia<img class="hover-image" src="images/rus.jpg" alt="in my Russia, everyone is loved" /></u> 🤍💙🤍 </p>
+					<hr>
+					<p><span>◌☾˚</span></p>
+					<p>i play games 🕹</p>
+					<p>i <i>sometimes</i> design and make games 🎮</p>
+					<p>i paint 🎨</p>
+					<p>draw 🖋</p>
+					<p>make videos 🎥 <span>(usually about gaming 🎥🕹)</span></p>
+					<p>i play guitar 🎸</p>
+					<p>and i make websites sometimes 🕸</p>
+					<p><span>₊☾˗</span></p>
+					<hr>
+					<p><b>timezone:</b> GMT+5</p>
+					<p><b>age:</b> 28 <span>(holy shit 😑)</span> - <b>pronouns:</b> she/her ♀</p>
+					<p><b>languages:</b> russan - native, english - C2, polish B1, swedish - A2, chinese - A1 </p>
+					<p><span>see ya~ ★ ˙☾ ̟</span></p>
+
 				</div>
-                <p> </p>
-                <p> </p>
-            </div>
-            <div id="Tab1" class="onetab" id="videostab">
-                <div>
-                    <h2>📹</h2>
-                    <h3>Youtube</h3>
-                    <p>Most of the videos that I ever made are on my <a href="https://www.youtube.com/@HidingFox/videos">Youtube channel</a></p>
-                    <p>
-                        <center><image style="max-width: 100%;" src="images/yt.jpg" loading="lazy"></image></center>
-                    </p>
-                    <h3>Non-Youtube</h3>
-                    <p>Some of the videos that I made were removed from Youtube due to copyright strikes. I reuploaded them to my Drive, where they are accessible via these links:</p>
-                    <div>
-                        <div class="contmenu">
-                            <div class="contitem">
-                                <input type="image" src="images/maryah.jpg" style="height: 9em;" id="maryah" onclick="contopen(this)" loading="lazy"/>
-                                <p><b>Christmas</b></p>
-                            </div>
-                            <div class="contitem">
-                                <input type="image" src="images/shroink.jpg" style="height: 9em;" id="shroink" onclick="contopen(this)" loading="lazy"/>
-                                <p><b>Shroink</b></p>
-                            </div>
-                            <div class="contitem">
-                                <input type="image" src="images/shrek.jpg" style="height: 9em;" id="shrek" onclick="contopen(this)" loading="lazy"/>
-                                <p><b>Shrek has Schizophrenia</b></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contwindow" id="maryahw">
-                    <p><a href="#" onclick="contclose(this)"><-- back</a></p>
-                    <div>
-                        <h3><b>All I Want For Christmas Is You but every noun is a random Minecraft sound</b></h3>
-                        <center><image type="image" src="images/maryah.jpg" loading="lazy"></image></center>
-                        <p>YT copyright bans the video bc music company apparently doesn't want free revenue they just don't want anyone to play their track</p><br>
-                        <p><a href="https://drive.google.com/file/d/1mHsTi7KQIDHd1LiVcSGTcrIGDKvZo6B2/" class="link">Link to video</a></p>
-                    </div>
-                </div>
-                <div class="contwindow" id="shroinkw">
-                    <p><a href="#" onclick="contclose(this)"><-- back</a></p>
-                    <div>
-                        <h3><b>Shroink</b></h3>
-                        <center><image type="image" src="images/shroink.jpg" loading="lazy"></image></center>
-                        <p>I compressed the entire Shrek movie to weigh about 60 mb, obviously Dreamworks doesn't want you to see this. Can't blame them.</p><br>
-                        <p>Compressed audio track was actually used in <a href="https://youtu.be/MkWYUnqaiNY">this vid</a></p><br>
-                        <p><a href="https://drive.google.com/file/d/1y8Yb5SkRb1PQSSnY5COpUYFqHHn2Ihcy" class="link">Link to video</a></p>
-                    </div>
-                </div>
-                <div class="contwindow" id="shrekw">
-                    <p><a href="#" onclick="contclose(this)"><-- back</a></p>
-                    <div>
-                        <h3><b>Shrek but Shrek has Schizophrenia</b></h3>
-                        <center><image type="image" src="images/shrek.jpg" loading="lazy"></image></center>
-                        <p>Has been banned again due to claims. Last time appeal work, this time enforced new rules, appeal was automatically removed.
-                        <p>Uploaded to YT on Feb 17, 2021. Had 45k views before it was removed.</p><br>
-                        <p>Original description:</p><br>
-                        <p>it took me a heckton of time to make this so watch this poorly edited video of a lonely ogre who is struggling with mental illness but eventually finds inner peace.</p><br>
-                        <p>Tracklist:</p>
-                        <p>Smash Mouth - All Star</p>
-                        <p>Proclaimers - I'm On My Way</p>
-                        <p>Eels - My Beloved Monster</p>
-                        <p>Rufus Wainwright - Hallelujah</p>
-                        <p>Jason Wade - You Belong to Me</p>
-                        <p>Smash Mouth - I'm a believer</p><br>
-                        <p>Man look at this heck: <a href="https://imgur.com/a/d1oeNUy">https://imgur.com/a/d1oeNUy</a></p>
-                        <p>Special thanks to Aquarely who edited one(1) image for me. It's the one where Shrek is in cathedral and there's no one in there. To edit all the people from there took literally two days, cool yah?</p>
-                        <p>Also, you can literally donate to me. But I don't accept civilized currency. Only blood. Before you ask, I am NOT a vampire, I'm a simple totally normal human being as the rest of the mortals on this world. I enjoy participating in many activities that other normal, non-vampiric, people enjoy. Like sewing and drinking liquids.</p>
-                        <p>Cheers, big ears.</p>
-                        <p><a href="https://drive.google.com/file/d/1e4UalKBnH2nyQMwP0vVsKbcuh_v9_Wzg/view?usp=sharing" class="link">Link to video</a></p>
-                    </div>
-                </div>
-            </div>
-            <div id="Tab2" class="onetab" id="drawingstab">
-                <div id="myModal" class="modal">
-                    <b><div id="caption" class="caption"></div></b>
-                    <p></p>
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="modalimg">
-                </div>
-                <h2>🎨</h2>
-                <h3>paintings</h3>
-                <p>click to enlarge</p>
-                <div class="imgrow">
-                    <div class="imgcolumn">
-                        <img src="images/paintings/birches.jpg" alt="Birches, Mar 2024. I was painting it for my grandma, but certain someone stole it." onclick="modalopen(this)" loading="lazy"/>
-                        <img src="images/paintings/logic.jpg" alt="Logic, 13 Mar 2023. Recreation of an artwork from Disco Elysium. Painted this as a gift for a friend. Used all my logic and skill." onclick="modalopen(this)" loading="lazy"/>
-                        <img src="images/paintings/randy1.jpg" alt="Randy, oil paint on 10x10 cm canvas, 2020. Drew it based on the thing that happened in my settlement in Rimworld." onclick="modalopen(this)" loading="lazy"/>
-                        <img src="images/paintings/mine.jpg" alt="Minecraft artwork, 2020. Oil on canvas. That was a gift for my gf." onclick="modalopen(this)" loading="lazy"/>
-                    </div>
-                    <div class="imgcolumn">
-                        <img src="images/paintings/concept.jpg" alt="Conceptualization, 1 Jan 2023. Recreation of an artwork from Disco Elysium. Painted this as a gift for someone that I used to know." onclick="modalopen(this)" loading="lazy"/>
-                        <img src="images/paintings/night.jpg" alt="Night, 2020. Oil on canvas. That was a gift for me mom." onclick="modalopen(this)" loading="lazy"/>
-                        <img src="images/paintings/lynx.jpg" alt="Lynxer rogue-like, 2020. Oil on canvas. That was a gift for my bro." onclick="modalopen(this)" loading="lazy"/>
-                    </div>
-                    <div class="imgcolumn">
-                        <img src="images/paintings/physical.jpg" alt="Physical Instrument, 1 Apr 2023. Recreation of an artwork from Disco Elysium. Just felt like painting this." onclick="modalopen(this)" loading="lazy"/>
-                        <img src="images/paintings/thrallcat.jpg" alt="Thrallcat, 2020. Oil on canvas. Is it a cat with a head of Thrall or Thrall with the body of a cat?" onclick="modalopen(this)" loading="lazy"/>
-                        <img src="images/paintings/foxmusic.jpg" alt="Fox bard, 2020. Oil on canvas. Fox playing a kraviklyre!" onclick="modalopen(this)" loading="lazy"/>
-                    </div>
-                </div>
-                <h3>drawings</h3>
-				<p align="center">My <a href="https://www.deviantart.com/hidingfoxy" class="link">Deviantart</a> for my modern art.</p>
-				<p><img style="display: block; margin-left: auto; margin-right: auto;" src="images/foxiself.png" alt="foxi sona selfportrait.png" loading="lazy"/></p>
-                <p>most drawings were lost in the great fire of 2023 (worst year omygosh🙄)</p>
-                <p>here are the ones I could find: <a href="https://mega.nz/folder/EHt1nKBa#gzSlTDfPnJjxqPGNfNV41g" class="link">archive</a></p>
-            </div>
-            <div id="Tab3" class="onetab" id="gamestab">
-                <div>
-                    <h2>🎮</h2>
-                    <p>(not so) recently I updated my [dun]geon game and uploaded it to itch.io. I guess I'll upload future games there too.</p>
-                    <p><a href="https://hidingfox.itch.io/">my itch.io page</a></p>
-                        <div class="contmenu">
-                            <div class="contitem" href="https://hidingfox.itch.io/">
-                                <a href="https://hidingfox.itch.io/" target="_blank"><image type="image" src="images/itch.jpg" loading="lazy"></image></a>
-                        </div>
-                    </div>
-                    
-					<label for=cb1 style="opacity: 50%; cursor:pointer;text-decoration:underline;">legacy games</label>
-					<input type='checkbox' style='display: none' id=cb1 checked />
-                    <div>
-					<h3>My old games made in Scirra Construct Classic.</h3>
-                        <div class="contmenu">
-                            <div class="contitem">
-                                <input type="image" src="images/chain.jpg" style="height: 10em;" id="chain" onclick="contopen(this)" loading="lazy"/>
-                                <p><b>The Chain</b></p>
-                            </div>
-                            <div class="contitem">
-                                <input type="image" src="images/glow.jpg" style="height: 10em;" id="glow" onclick="contopen(this)" loading="lazy"/>
-                                <p><b>Glowing</b></p>
-                            </div>
-                            <div class="contitem">
-                                <input type="image" src="images/gta60.jpg" style="height: 10em;" id="gta" onclick="contopen(this)" loading="lazy"/>
-                                <p><b>GTA60</b></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contwindow" id="chainw">
-                    <p><a href="#" onclick="contclose(this)"><-- back</a></p>
-                    <p>
-                        <image type="image" src="images/chain.jpg"></image>
-                    </p>
-                    <h3>The Chain</h3>
-                    <p>Release: 15 Jul 2015</p>
-                    <p>Controls:<br>
-                        Arrows to move around<br>
-                        Scrool wheel to zoom<br>
-                        LMB to drag and drop animals around<br>
-                        LMB/RMB on stats on the left upper corner to decrease/increase number of existing entities.</p>
-                    <p><a href="https://drive.google.com/file/d/1HIT2PhbVTjno618FxI8CcLtvDrVUj0dW/view?usp=sharing" class="link">download</a></p>
-                </div>
-                <div class="contwindow" id="gloww">
-                    <p><a href="#" onclick="contclose(this)"><-- back</a></p>
-                    <p>
-                        <image type="image" src="images/glow.jpg"></image>
-                    </p>
-                    <h3>Glowing</h3>
-                    <p>Release: 28 Jun 2015</p>
-                    <p>Simple arcade game-labyrinth based on fading effect of walls.<
-                        Walls are fading into invisibility, you can see them only in a small gap of time when they're fading.<br>
-                        To start fade effect, you gotta "touch" a wall.</p>
-                    <p>Move with arrow keys<br>
-                        Esc - close
-                    </p>
-                    <p><a href="https://drive.google.com/file/d/136u2TQ3Bn76JAy2RRVaX4vXrzCuODnGe/view?usp=sharing" class="link">download</a></p>
-                </div>
-                <div class="contwindow" id="gtaw">
-                    <p><a href="#" onclick="contclose(this)"><-- back</a></p>
-                    <p>
-                        <image type="image" src="images/gta60.jpg"></image>
-                    </p>
-                    <p><b>GTA60</b></p>
-                    <p>Release date: 2 Jun 2015 (Unfinished)</p>
-                    <p>GTA60 is a TDS arcade, you play as CJ who's driving a purple car (o_o)</p><p>look I was 17...</p><br>
-                    <p><a href="https://drive.google.com/file/d/1vyMksnHJ0sPpuBpL4d4PVGl-DrVDOSrC/view?usp=sharing" class="link">download</a>(25M)</p>                </div>
-            </div>
-            <div id="Tab4" class="onetab" id="projectstab">
-                <div>
-                    <h2>📜</h2>
-                    <h3 class="gradient">websites</h3>
-                    <div>
-                        <div class="contmenu">
-                            <div class="contitem">
-                                <input type="image" src="images/dun.jpg" style="height: 10em;" id="dun" onclick="contopen(this)" loading="lazy"/>
-                                <p>the [dun]geon</p>
-                            </div>
-                            <div class="contitem">
-                                <input type="image" src="images/ara1.jpg" style="height: 10em;" id="ara1" onclick="contopen(this)" loading="lazy"/>
-                                <p>Arabic2Roman</p>
-                            </div>
-                            <div class="contitem">
-                                <input type="image" src="images/num1.jpg" style="height: 10em;" id="num1" onclick="contopen(this)" loading="lazy"/>
-                                <p>Numerals</p>
-                            </div>
-                            <div class="contitem">
-                                <input type="image" src="images/sol.jpg" style="height: 10em;" id="sol" onclick="contopen(this)" loading="lazy"/>
-                                <p>Solar system</p>
-                            </div>
-                            <div class="contitem">
-                                <input type="image" src="images/cut.jpg" style="height: 10em;" id="cut" onclick="contopen(this)" loading="lazy"/>
-                                <p>CuteTextile</p>
-                            </div>
-                        </div>
-                    </div>
-                    <h3>blender files</h3>
-                    <div class="card">
-                        <div class="card-text">
-                            <p><b>Foxe</b></p>
-                            <p>My low-poly fox model, was used in <a href="https://drive.google.com/file/d/1E9xdS7H-2sFAMqzcxx3HCP2KFPTiS3BI/view?usp=sharing" target="_blank">this video.</a></p>
-                            <p><a href="https://drive.google.com/file/d/1E9xdS7H-2sFAMqzcxx3HCP2KFPTiS3BI/view?usp=sharing" class="link">download</a></p>
-                        </div>
-                        <img src="images/foxe.jpg" loading="lazy" alt="" class="card-image"/>
-                    </div>
-                    <div class="card">
-                        <div class="card-text">
-                            <p><b>Arizona Ranger</b></p>
-                            <p>Low-poly model of the Arizona Ranger. Was used in a video about him <a href="https://www.youtube.com/watch?v=n0xfydNI2Wg" target="_blank">brutally murdering Texas Red!</a></p>
-                            <p><a href="https://drive.google.com/file/d/1P66e_lBP80uk1liiVAtO5_fTfZBq6hFy/view?usp=sharing" class="link">download</a></p>
-                        </div>
-                        <img src="images/ar.jpg" loading="lazy" alt="" class="card-image"/>
-                    </div>
-                    <div class="card">
-                        <div class="card-text">
-                            <p><b>Texas Red and his family</b></p>
-                            <p>Models of Texas Red, Texas Daisy and Texas Sue from my <a href="https://www.youtube.com/watch?v=GWWGiQY0azw" target="_blank">stream.</a></p>
-                            <p><a href="https://drive.google.com/file/d/1CB7jmtdmEbMCeUDKlxJIqwPYX7wVCcRk/view" class="link">download</a></p>
-                        </div>
-                        <img src="images/tex.jpg" loading="lazy" alt="" class="card-image"/>
-                    </div>
-                    <h3>crafting</h3>
-                    <div class="card">
-                        <div class="card-text">
-                            <p><b>Dryad horns</b></p>
-                            <p>I made dryad horns once, when I was stanning Lunara from HOTS harder than humanly possible circa Aug 2018</p>
-                            <p><a href="https://imgur.com/a/dryad-horns-CHAeRHc" class="link">imgur album</a></p>
-                        </div>
-                        <img src="images/horns.jpeg" loading="lazy" alt="" class="card-image"/>
-                    </div>
-                    <div class="card">
-                        <div class="card-text">
-                            <p><b>Healing potion</b></p>
-                            <p>Found a discarded old kognac bottle while melancholically wandering around woods. Turned it into a healing potion. Circa July 2018</p>
-                            <p><a href="https://imgur.com/a/healing-potion-diy-ipmHLIN" class="link">imgur album</a></p>
-                        </div>
-                        <img src="images/healin.jpeg" loading="lazy" alt="" class="card-image"/>
-                    </div>
-                </div>
-                <div class="contwindow" id="dunw">
-                    <p><a href="#" onclick="contclose(this)"><-- back</a></p>
-                    <p>
-                        <image type="image" src="images/dun.jpg" loading="lazy"/>
-                    </p>
-                    <h3>The [dun]geon</h3>
-                    <p>Text-based rogue-like RPG.</p>
-                    <p><a href="https://hidingfox.com/thedungeon/" target="_blank">explore</a></p>
-                </div>
-                <div class="contwindow" id="ara1w">
-                    <p><a href="#" onclick="contclose(this)"><-- back</a></p>
-                    <p>
-                        <image type="image" src="images/ara1.jpg" loading="lazy"/>
-                    </p>
-                    <h3>Arabic2Roman</h3>
-                    <p>Website that translates Arabic numerals to Roman and back.</p>
-                    <p>It also has a cute dark mode :3</p>
-                    <p><a href="https://hidingfox.com/arabic2roman/" target="_blank">explore</a></p>
-                </div>
-                <div class="contwindow" id="num1w">
-                    <p><a href="#" onclick="contclose(this)"><-- back</a></p>
-                    <p>
-                        <image type="image" src="images/num1.jpg" loading="lazy"/>
-                    </p>
-                    <h3>Numerals</h3>
-                    <p>Website that lets you convert integers between decimal, binary octal and hexagonal systems.</p>
-                    <p>It also has a silly dark mode :3</p>
-                    <p><a href="https://hidingfox.com/numerals/" target="_blank">explore</a></p>
-                </div>
-                <div class="contwindow" id="solw">
-                    <p><a href="#" onclick="contclose(this)"><-- back</a></p>
-                    <p>
-                        <image type="image" src="images/sol.jpg" loading="lazy"/>
-                    </p>
-                    <h3>Solar system</h3>
-                    <p>Concept of an educational site. Written and coded by me. Designed by <a href="https://www.behance.net/aquarely" target="_blank">Aquarely</a></p>
-                    <p><a href="https://hidingfox.com/solarsystem/" target="_blank">explore</a></p>
-                </div>
-                <div class="contwindow" id="cutw">
-                    <p><a href="#" onclick="contclose(this)"><-- back</a></p>
-                    <p>
-                        <image type="image" src="images/cut.jpg" loading="lazy"/>
-                    </p>
-                    <h3>CuteTextile</h3>
-                    <p>Concept site for a textile-selling company. Designed by <a href="https://www.behance.net/aquarely" target="_blank">Aquarely</a></p>
-                    <p><a href="https://hidingfox.com/cutetextile/" target="_blank">explore</a></p>
-                </div>
-            </div>
-            <div id="Tab5" class="onetab" id="linkstab">
-                <h2>🔖</h2>
-                <center>
-				<p>
-                    <a href="https://bsky.app/profile/hidingfox.com" class="link"><image class="ico" src="images/bsky.svg"></image> Blue Sky</a>
-                </p>
-                <p>
-                    <a href="http://discord.com/invite/hWsWqKBZDt" class="link"><image class="ico" src="images/discord.svg"></image> Discord</a>
-                </p>
-                <p>
-                    <a href="http://www.reddit.com/user/HidingFox" class="link"><image class="ico" src="images/reddit.svg"></image> Reddit</a>
-                </p>
-                <p>
-                    <span><image class="ico" src="images/youtube.svg"></image> Youtube (got fucking nuked)</span>
-                </p>
-                <p>
-                    <a href="http://steamcommunity.com/id/hidingfox" class="link"><image class="ico" src="images/steam.svg"></image> Steam</a>
-                </p>
-				<p>
-                    <a href="https://www.deviantart.com/hidingfoxy" class="link"><image class="ico" src="images/devart.svg"></image> Deviantart</a>
-                </p>
-                <p>
-                    <a href="https://www.16personalities.com/profiles/21d4d56556632" class="link"><image class="ico" src="images/16p.svg"></image> 16 Personalities</a>
-                </p><br>
-                <p>
-                    I don't have Twitter, Instagram, Tiktok, or any other social network 🤷‍♀️
-                </p>
-                </center>
-            </div>
-        </main>
+				<!-- LINKS! -->
+				<div id="Tab1" class="onetab" id="linkstab" style="text-align: center;">
+					<h2>🔖</h2>
+					<div>
+					<p><a href="https://bsky.app/profile/hidingfox.com" class="link"><image class="ico" src="images/icons/bsky.svg"></image> bsky</a></p>
+					<p>i use it as a blog</p></div>
+					<hr>
+					<div>
+					<p><a href="http://discord.com/invite/hWsWqKBZDt" class="link"><image class="ico" src="images/icons/discord.svg"></image> discord</a></p>
+					<p>safe place for my and other queers to murmur</p></div>
+					<hr>
+					<div><p><a href="http://www.reddit.com/user/HidingFox" class="link"><image class="ico" src="images/icons/reddit.svg"></image> reddit</a></p>
+					<p>mmm sweet imaginary points</p></div>
+					<hr>
+					<div><p><a href="https://www.youtube.com/@hidingfoxreupload" class="link"><image class="ico" src="images/icons/youtube.svg"></image> youtube-alt</a></p>
+					<p>my first yt channel got nuked for no reason, thanks google!</p></div>
+					<hr>
+					<div><p><a href="http://steamcommunity.com/id/hidingfox" class="link"><image class="ico" src="images/icons/steam.svg"></image> steam</a></p>
+					<p>if you wanna gam together :3</p></div>
+					<hr>
+					<div><p><a href="https://www.deviantart.com/hidingfoxy" class="link"><image class="ico" src="images/icons/devart.svg"></image> deviantart</a></p>
+					<p>so-called art</p></div>
+					<hr>
+					<div><p><a href="https://www.twitch.tv/hidingfoxy" class="link"><image class="ico" src="images/icons/twt.svg"></image> twitch</a></p>
+					<p>biggest v-tuber i am</p></div>
+					<hr>
+					<div><p><a href="https://www.patreon.com/hidingfox" class="link"><image class="ico" src="images/icons/pat.svg"></image> patreon</a></p>
+					<p>we haven't demolished capitalism yet...</p></div>
+					<hr>
+					<div><p><a href="https://www.16personalities.com/profiles/21d4d56556632" class="link"><image class="ico" src="images/icons/16p.svg"></image> 16 Personalities</a></p></div>
+					<hr>
+					<br>
+					<p>
+						I don't have Twitter, Instagram, Tiktok, or any other social network 🤷‍♀️
+					</p>
+				</div>
+				<!-- MUSIC! -->
+				<div id="Tab2" class="onetab" id="musictab">
+					<h2>🎵</h2>
+					<h3>covers</h3>
+					<div>
+					<p>death cab for cutie - decorator death.mp3</p>
+					<audio controls autoplay>
+						<source src="audio/dcfc - decorator death.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio></div>
+					<hr>
+					<div>
+					<p>jack stauber - oh klahoma.mp3</p>
+					<audio controls autoplay>
+						<source src="audio/jack stauber - oh klahoma.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio></div>
+					<hr>
+					<div>
+					<p>the shins - celibate life.mp3</p>
+					<audio controls autoplay>
+						<source src="audio/the shins - celibate life.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio></div>
+					<hr>
+					<div>
+					<p>the shins - pressed in a book.mp3</p>
+					<audio controls autoplay>
+						<source src="audio/the shins - pressed in a book.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio></div>
+					<hr>
+					<div>
+					<p>the strokes - ill try anything once.mp3</p>
+					<audio controls autoplay>
+						<source src="audio/the strokes - ill try anything once.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio></div>
+					<hr>
+					<div>
+					<p>the strokes - automatic stop.m4a</p>
+					<audio controls autoplay>
+						<source src="audio/the strokes - automatic stop.m4a" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio></div>
+					<hr>
+					
+					<h3>errrr</h3>
+					<div>
+					<p>triangle_fox.m4a</p>
+					<audio controls autoplay>
+						<source src="audio/triangle_fox.m4a" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio></div>
+					
+					<h3>originals</h3>
+					<div>
+					<p>west coast (demo).mp3</p>
+					<audio controls autoplay>
+						<source src="audio/west coast (demo).mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio></div>
+					<hr>
+					<div>
+					<p>wild magic (mellow).mp3</p>
+					<audio controls autoplay>
+						<source src="audio/wild magic (mellow).mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio></div>
+				</div>
+				<!-- VIDS! -->
+				<div id="Tab3" class="onetab" id="videostab">
+					<div>
+						<h2>📹</h2>
+						<h3>Youtube</h3>
+						<span>main channel got wrongly nuked, but whaddya know</span>
+						<p>Most of the videos that I ever made are on my <a href="https://www.youtube.com/@hidingfoxreupload">Youtube-alt channel</a></p>
+						<p>
+							<center><image style="max-width: 100%;" src="images/yt.jpg" loading="lazy"></image></center>
+						</p>
+						<h3>Non-Youtube</h3>
+						<p>Some of the videos that I made were removed from Youtube due to copyright strikes. I reuploaded them to my Drive, where they are accessible via these links:</p>
+						<div>
+							<div class="contmenu">
+								<div class="contitem">
+									<input type="image" src="images/maryah.jpg" style="height: 9em;" id="maryah" onclick="contopen(this)" loading="lazy"/>
+									<p><b>Christmas</b></p>
+								</div>
+								<div class="contitem">
+									<input type="image" src="images/shroink.jpg" style="height: 9em;" id="shroink" onclick="contopen(this)" loading="lazy"/>
+									<p><b>Shroink</b></p>
+								</div>
+								<div class="contitem">
+									<input type="image" src="images/shrek.jpg" style="height: 9em;" id="shrek" onclick="contopen(this)" loading="lazy"/>
+									<p><b>Shrek has Schizophrenia</b></p>
+								</div>
+							</div>
+						</div>
+						<p>these and more are also allowed via links on my discord server</p>
+					</div>
+					<div class="contwindow" id="maryahw">
+						<p><a href="#" onclick="contclose(this)"><-- back</a></p>
+						<div>
+							<h3><b>All I Want For Christmas Is You but every noun is a random Minecraft sound</b></h3>
+							<center><image type="image" src="images/maryah.jpg" loading="lazy"></image></center>
+							<p>YT copyright bans the video bc music company apparently doesn't want free revenue they just don't want anyone to play their track</p><br>
+							<p><a href="https://drive.google.com/file/d/1mHsTi7KQIDHd1LiVcSGTcrIGDKvZo6B2/" class="link">Link to video</a></p>
+						</div>
+					</div>
+					<div class="contwindow" id="shroinkw">
+						<p><a href="#" onclick="contclose(this)"><-- back</a></p>
+						<div>
+							<h3><b>Shroink</b></h3>
+							<center><image type="image" src="images/shroink.jpg" loading="lazy"></image></center>
+							<p>I compressed the entire Shrek movie to weigh about 60 mb, obviously Dreamworks doesn't want you to see this. Can't blame them.</p><br>
+							<p>Compressed audio track was actually used in <a href="https://youtu.be/MkWYUnqaiNY">this vid</a></p><br>
+							<p><a href="https://drive.google.com/file/d/1y8Yb5SkRb1PQSSnY5COpUYFqHHn2Ihcy" class="link">Link to video</a></p>
+						</div>
+					</div>
+					<div class="contwindow" id="shrekw">
+						<p><a href="#" onclick="contclose(this)"><-- back</a></p>
+						<div>
+							<h3><b>Shrek but Shrek has Schizophrenia</b></h3>
+							<center><image type="image" src="images/shrek.jpg" loading="lazy"></image></center>
+							<p>Has been banned again due to claims. Last time appeal work, this time enforced new rules, appeal was automatically removed.
+							<p>Uploaded to YT on Feb 17, 2021. Had 45k views before it was removed.</p><br>
+							<p>Original description:</p><br>
+							<p>it took me a heckton of time to make this so watch this poorly edited video of a lonely ogre who is struggling with mental illness but eventually finds inner peace.</p><br>
+							<p>Tracklist:</p>
+							<p>Smash Mouth - All Star</p>
+							<p>Proclaimers - I'm On My Way</p>
+							<p>Eels - My Beloved Monster</p>
+							<p>Rufus Wainwright - Hallelujah</p>
+							<p>Jason Wade - You Belong to Me</p>
+							<p>Smash Mouth - I'm a believer</p><br>
+							<p>Man look at this heck: <a href="https://imgur.com/a/d1oeNUy">https://imgur.com/a/d1oeNUy</a></p>
+							<p>Special thanks to Aquarely who edited one(1) image for me. It's the one where Shrek is in cathedral and there's no one in there. To edit all the people from there took literally two days, cool yah?</p>
+							<p>Also, you can literally donate to me. But I don't accept civilized currency. Only blood. Before you ask, I am NOT a vampire, I'm a simple totally normal human being as the rest of the mortals on this world. I enjoy participating in many activities that other normal, non-vampiric, people enjoy. Like sewing and drinking liquids.</p>
+							<p>Cheers, big ears.</p>
+							<p><a href="https://drive.google.com/file/d/1e4UalKBnH2nyQMwP0vVsKbcuh_v9_Wzg/view?usp=sharing" class="link">Link to video</a></p>
+						</div>
+					</div>
+				</div>
+				<!-- ART! -->
+				<div id="Tab4" class="onetab" id="drawingstab">
+					<div id="myModal" class="modal">
+						<b><div id="caption" class="caption"></div></b>
+						<p></p>
+						<span class="close">&times;</span>
+						<img class="modal-content" id="modalimg">
+					</div>
+					<h2>🎨</h2>
+					<p>latest masterpiece:</p>
+					<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:kpmpsbvbxmwyk2ysa6wmcwbi/app.bsky.feed.post/3lpadnusx222c" data-bluesky-cid="bafyreif2trntyviu56razftdvzx5p2zteguhdfcp2z7gtgsvy5ssunnsym" data-bluesky-embed-color-mode="dark"><p lang="en">poor Västergötland &lt;3 🦅🦁
+
+#digital #art #furry<br><br><a href="https://bsky.app/profile/did:plc:kpmpsbvbxmwyk2ysa6wmcwbi/post/3lpadnusx222c?ref_src=embed">[image or embed]</a></p>&mdash; hidingfox (<a href="https://bsky.app/profile/did:plc:kpmpsbvbxmwyk2ysa6wmcwbi?ref_src=embed">@hidingfox.com</a>) <a href="https://bsky.app/profile/did:plc:kpmpsbvbxmwyk2ysa6wmcwbi/post/3lpadnusx222c?ref_src=embed">May 16, 2025 at 1:21 AM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+					
+					<h3>drawings</h3>
+					<p align="center">My <a href="https://www.deviantart.com/hidingfoxy" class="link">Deviantart</a> for my modern art.</p>
+					<p><img style="display: block; margin-left: auto; margin-right: auto;" src="images/foxiself.png" alt="foxi sona selfportrait.png" loading="lazy"/></p>
+					<p>most drawings were lost in the great fire of 2023 (worst year omygosh🙄)</p>
+					<p>here are the ones I could find: <a href="https://mega.nz/folder/EHt1nKBa#gzSlTDfPnJjxqPGNfNV41g" class="link">archive</a></p>
+					
+					<h3>paintings</h3>
+					<p>click to enlarge</p>
+					<div class="imgrow">
+						<div class="imgcolumn">
+							<img src="images/paintings/birches.jpg" alt="Birches, Mar 2024. I was painting it for my grandma, but certain someone stole it." onclick="modalopen(this)" loading="lazy"/>
+							<img src="images/paintings/logic.jpg" alt="Logic, 13 Mar 2023. Recreation of an artwork from Disco Elysium. Painted this as a gift for a friend. Used all my logic and skill." onclick="modalopen(this)" loading="lazy"/>
+							<img src="images/paintings/randy1.jpg" alt="Randy, oil paint on 10x10 cm canvas, 2020. Drew it based on the thing that happened in my settlement in Rimworld." onclick="modalopen(this)" loading="lazy"/>
+							<img src="images/paintings/mine.jpg" alt="Minecraft artwork, 2020. Oil on canvas. That was a gift for my gf." onclick="modalopen(this)" loading="lazy"/>
+						</div>
+						<div class="imgcolumn">
+							<img src="images/paintings/concept.jpg" alt="Conceptualization, 1 Jan 2023. Recreation of an artwork from Disco Elysium. Painted this as a gift for someone that I used to know." onclick="modalopen(this)" loading="lazy"/>
+							<img src="images/paintings/night.jpg" alt="Night, 2020. Oil on canvas. That was a gift for me mom." onclick="modalopen(this)" loading="lazy"/>
+							<img src="images/paintings/lynx.jpg" alt="Lynxer rogue-like, 2020. Oil on canvas. That was a gift for my bro." onclick="modalopen(this)" loading="lazy"/>
+						</div>
+						<div class="imgcolumn">
+							<img src="images/paintings/physical.jpg" alt="Physical Instrument, 1 Apr 2023. Recreation of an artwork from Disco Elysium. Just felt like painting this." onclick="modalopen(this)" loading="lazy"/>
+							<img src="images/paintings/thrallcat.jpg" alt="Thrallcat, 2020. Oil on canvas. Is it a cat with a head of Thrall or Thrall with the body of a cat?" onclick="modalopen(this)" loading="lazy"/>
+							<img src="images/paintings/foxmusic.jpg" alt="Fox bard, 2020. Oil on canvas. Fox playing a kraviklyre!" onclick="modalopen(this)" loading="lazy"/>
+						</div>
+					</div>
+				</div>
+				<!-- GAMES! -->
+				<div id="Tab5" class="onetab" id="gamestab">
+					<div>
+						<h2>🎮</h2>
+						<p>(not so) recently I updated my [dun]geon game and uploaded it to itch.io. I guess I'll upload future games there too.</p>
+						<p><a href="https://hidingfox.itch.io/">my itch.io page</a></p>
+							<div class="contmenu">
+								<div class="contitem" href="https://hidingfox.itch.io/">
+									<a href="https://hidingfox.itch.io/" target="_blank"><image type="image" src="images/itch.jpg" loading="lazy"></image></a>
+							</div>
+						</div>
+						
+						<label for=cb1 style="opacity: 50%; cursor:pointer;text-decoration:underline;">legacy games</label>
+						<input type='checkbox' style='display: none' id=cb1 checked />
+						<div>
+						<h3>My old games made in Scirra Construct Classic.</h3>
+							<div class="contmenu">
+								<div class="contitem">
+									<input type="image" src="images/chain.jpg" style="height: 10em;" id="chain" onclick="contopen(this)" loading="lazy"/>
+									<p><b>The Chain</b></p>
+								</div>
+								<div class="contitem">
+									<input type="image" src="images/glow.jpg" style="height: 10em;" id="glow" onclick="contopen(this)" loading="lazy"/>
+									<p><b>Glowing</b></p>
+								</div>
+								<div class="contitem">
+									<input type="image" src="images/gta60.jpg" style="height: 10em;" id="gta" onclick="contopen(this)" loading="lazy"/>
+									<p><b>GTA60</b></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contwindow" id="chainw">
+						<p><a href="#" onclick="contclose(this)"><-- back</a></p>
+						<p>
+							<image type="image" src="images/chain.jpg"></image>
+						</p>
+						<h3>The Chain</h3>
+						<p>Release: 15 Jul 2015</p>
+						<p>Controls:<br>
+							Arrows to move around<br>
+							Scrool wheel to zoom<br>
+							LMB to drag and drop animals around<br>
+							LMB/RMB on stats on the left upper corner to decrease/increase number of existing entities.</p>
+						<p><a href="https://drive.google.com/file/d/1HIT2PhbVTjno618FxI8CcLtvDrVUj0dW/view?usp=sharing" class="link">download</a></p>
+					</div>
+					<div class="contwindow" id="gloww">
+						<p><a href="#" onclick="contclose(this)"><-- back</a></p>
+						<p>
+							<image type="image" src="images/glow.jpg"></image>
+						</p>
+						<h3>Glowing</h3>
+						<p>Release: 28 Jun 2015</p>
+						<p>Simple arcade game-labyrinth based on fading effect of walls.<
+							Walls are fading into invisibility, you can see them only in a small gap of time when they're fading.<br>
+							To start fade effect, you gotta "touch" a wall.</p>
+						<p>Move with arrow keys<br>
+							Esc - close
+						</p>
+						<p><a href="https://drive.google.com/file/d/136u2TQ3Bn76JAy2RRVaX4vXrzCuODnGe/view?usp=sharing" class="link">download</a></p>
+					</div>
+					<div class="contwindow" id="gtaw">
+						<p><a href="#" onclick="contclose(this)"><-- back</a></p>
+						<p>
+							<image type="image" src="images/gta60.jpg"></image>
+						</p>
+						<p><b>GTA60</b></p>
+						<p>Release date: 2 Jun 2015 (Unfinished)</p>
+						<p>GTA60 is a TDS arcade, you play as CJ who's driving a purple car (o_o)</p><p>look I was 17...</p><br>
+						<p><a href="https://drive.google.com/file/d/1vyMksnHJ0sPpuBpL4d4PVGl-DrVDOSrC/view?usp=sharing" class="link">download</a>(25M)</p>                </div>
+				</div>
+				<!-- PROJECTS! -->
+				<div id="Tab6" class="onetab" id="projectstab">
+					<div>
+						<h2>📜</h2>
+						<!--  web -->
+						<h3 class="gradient">websites</h3>
+						<div>
+							<div class="contmenu">
+								<div class="contitem">
+									<input type="image" src="images/dun.jpg" style="height: 10em;" id="dun" onclick="contopen(this)" loading="lazy"/>
+									<p>the [dun]geon</p>
+								</div>
+								<div class="contitem">
+									<input type="image" src="images/ara1.jpg" style="height: 10em;" id="ara1" onclick="contopen(this)" loading="lazy"/>
+									<p>Arabic2Roman</p>
+								</div>
+								<div class="contitem">
+									<input type="image" src="images/num1.jpg" style="height: 10em;" id="num1" onclick="contopen(this)" loading="lazy"/>
+									<p>Numerals</p>
+								</div>
+								<div class="contitem">
+									<input type="image" src="images/sol.jpg" style="height: 10em;" id="sol" onclick="contopen(this)" loading="lazy"/>
+									<p>Solar system</p>
+								</div>
+								<div class="contitem">
+									<input type="image" src="images/cut.jpg" style="height: 10em;" id="cut" onclick="contopen(this)" loading="lazy"/>
+									<p>CuteTextile</p>
+								</div>
+							</div>
+						</div>
+						<!--  mods -->
+						<h3>mods for games</h3>
+						<div class="card">
+							<div class="card-text">
+								<p><b>More Foxes for Rimword</b></p>
+								<p>Mod for Rimworld that adds more fox species.</p>
+								<p>get it on <a href="https://github.com/hidingfoxy/morefoxes" class="link">Github</a>, <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2633670435" class="link">Steam</a>, <a href="https://ludeon.com/forums/index.php?topic=55750.0" class="link">Ludeon</a>, </p>
+							</div>
+							<img src="images/morefoxes.png" loading="lazy" alt="" class="card-image"/>
+						</div>
+						<!--  blender -->
+						<h3>blender files</h3>
+						<div class="card">
+							<div class="card-text">
+								<p><b>Foxe</b></p>
+								<p>My low-poly fox model, was used in <a href="https://drive.google.com/file/d/1E9xdS7H-2sFAMqzcxx3HCP2KFPTiS3BI/view?usp=sharing" target="_blank">this video.</a></p>
+								<p><a href="https://drive.google.com/file/d/1E9xdS7H-2sFAMqzcxx3HCP2KFPTiS3BI/view?usp=sharing" class="link">download</a></p>
+							</div>
+							<img src="images/foxe.jpg" loading="lazy" alt="" class="card-image"/>
+						</div>
+						<div class="card">
+							<div class="card-text">
+								<p><b>Arizona Ranger</b></p>
+								<p>Low-poly model of the Arizona Ranger. Was used in a video about him <a href="https://www.youtube.com/watch?v=n0xfydNI2Wg" target="_blank">brutally murdering Texas Red!</a></p>
+								<p><a href="https://drive.google.com/file/d/1P66e_lBP80uk1liiVAtO5_fTfZBq6hFy/view?usp=sharing" class="link">download</a></p>
+							</div>
+							<img src="images/ar.jpg" loading="lazy" alt="" class="card-image"/>
+						</div>
+						<div class="card">
+							<div class="card-text">
+								<p><b>Texas Red and his family</b></p>
+								<p>Models of Texas Red, Texas Daisy and Texas Sue from my <a href="https://www.youtube.com/watch?v=GWWGiQY0azw" target="_blank">stream.</a></p>
+								<p><a href="https://drive.google.com/file/d/1CB7jmtdmEbMCeUDKlxJIqwPYX7wVCcRk/view" class="link">download</a></p>
+							</div>
+							<img src="images/tex.jpg" loading="lazy" alt="" class="card-image"/>
+						</div>
+						<!--  craft -->
+						<h3>crafting</h3>
+						<div class="card">
+							<div class="card-text">
+								<p><b>Dryad horns</b></p>
+								<p>I made dryad horns once, when I was stanning Lunara from HOTS harder than humanly possible circa Aug 2018</p>
+								<p><a href="https://imgur.com/a/dryad-horns-CHAeRHc" class="link">imgur album</a></p>
+							</div>
+							<img src="images/horns.jpeg" loading="lazy" alt="" class="card-image"/>
+						</div>
+						<div class="card">
+							<div class="card-text">
+								<p><b>Healing potion</b></p>
+								<p>Found a discarded old kognac bottle while melancholically wandering around woods. Turned it into a healing potion. Circa July 2018</p>
+								<p><a href="https://imgur.com/a/healing-potion-diy-ipmHLIN" class="link">imgur album</a></p>
+							</div>
+							<img src="images/healin.jpeg" loading="lazy" alt="" class="card-image"/>
+						</div>
+					</div>
+					<div class="contwindow" id="dunw">
+						<p><a href="#" onclick="contclose(this)"><-- back</a></p>
+						<p>
+							<image type="image" src="images/dun.jpg" loading="lazy"/>
+						</p>
+						<h3>The [dun]geon</h3>
+						<p>Text-based rogue-like RPG.</p>
+						<p><a href="https://hidingfox.com/thedungeon/" target="_blank">explore</a></p>
+					</div>
+					<div class="contwindow" id="ara1w">
+						<p><a href="#" onclick="contclose(this)"><-- back</a></p>
+						<p>
+							<image type="image" src="images/ara1.jpg" loading="lazy"/>
+						</p>
+						<h3>Arabic2Roman</h3>
+						<p>Website that translates Arabic numerals to Roman and back.</p>
+						<p>It also has a cute dark mode :3</p>
+						<p><a href="https://hidingfox.com/arabic2roman/" target="_blank">explore</a></p>
+					</div>
+					<div class="contwindow" id="num1w">
+						<p><a href="#" onclick="contclose(this)"><-- back</a></p>
+						<p>
+							<image type="image" src="images/num1.jpg" loading="lazy"/>
+						</p>
+						<h3>Numerals</h3>
+						<p>Website that lets you convert integers between decimal, binary octal and hexagonal systems.</p>
+						<p>It also has a silly dark mode :3</p>
+						<p><a href="https://hidingfox.com/numerals/" target="_blank">explore</a></p>
+					</div>
+					<div class="contwindow" id="solw">
+						<p><a href="#" onclick="contclose(this)"><-- back</a></p>
+						<p>
+							<image type="image" src="images/sol.jpg" loading="lazy"/>
+						</p>
+						<h3>Solar system</h3>
+						<p>Concept of an educational site. Written and coded by me. Designed by <a href="https://www.behance.net/aquarely" target="_blank">Aquarely</a></p>
+						<p><a href="https://hidingfox.com/solarsystem/" target="_blank">explore</a></p>
+					</div>
+					<div class="contwindow" id="cutw">
+						<p><a href="#" onclick="contclose(this)"><-- back</a></p>
+						<p>
+							<image type="image" src="images/cut.jpg" loading="lazy"/>
+						</p>
+						<h3>CuteTextile</h3>
+						<p>Concept site for a textile-selling company. Designed by <a href="https://www.behance.net/aquarely" target="_blank">Aquarely</a></p>
+						<p><a href="https://hidingfox.com/cutetextile/" target="_blank">explore</a></p>
+					</div>
+				</div>
+			</main>
+		</div>
 		<footer>
 			<span style="font-size:12px; opacity:60%"> all of my work throughout all of my accounts is shared under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="link">CC BY-SA</a> licence (attribution required) </span>
 		</footer>
