@@ -4,15 +4,36 @@ function tab(idnum) {
 		if (idnum == i) {
 			document.getElementById("Tab" + i.toString()).classList.add("tab-active")
 			document.getElementById("Nav" + i.toString()).classList.add("current-link")
-			document.getElementById("Nav" + i.toString()).classList.remove("notcurrent-link")
 		} else {
 			document.getElementById("Tab" + i.toString()).classList.remove("tab-active")
 			document.getElementById("Nav" + i.toString()).classList.remove("current-link")
-			document.getElementById("Nav" + i.toString()).classList.add("notcurrent-link")
 		}
 		
 	}
 }
+
+
+var moon = 0;
+var tabslist = document.querySelectorAll('.onetab');
+
+function NightMode() {
+	if (moon === 0) {
+		moon = 1;
+		document.getElementById("body").setAttribute("class", "dark-mode");
+		document.getElementById("moon").setAttribute("src", "images/darkmoon.png")
+		for(var i = 0; i < tabslist.length; i++) {
+			tabslist[i].classList.toggle("dark-card");
+		  }
+	} else {
+		moon = 0;
+		document.getElementById("body").setAttribute("class", "");
+		document.getElementById("moon").setAttribute("src", "images/lightmoon.png")
+		for(var i = 0; i < tabslist.length; i++) {
+			tabslist[i].classList.toggle("dark-card");
+		  }
+	}
+	
+} 
 
 
 function contopen(elem) {
