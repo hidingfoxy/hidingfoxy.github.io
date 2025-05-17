@@ -1,6 +1,27 @@
 @font-face {
-	font-family: Quicksand;
-	src: url(Quicksand-Regular.ttf) format('truetype');
+	font-family: Ubuntu;
+	src: url(Ubuntu/Ubuntu-Light.ttf) format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Ubuntu;
+	src: url(Ubuntu/Ubuntu-LightItalic.ttf) format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Ubuntu;
+	src: url(Ubuntu/Ubuntu-Bold.ttf) format('truetype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: Ubuntu;
+	src: url(Ubuntu-BoldItalic.ttf) format('truetype');
+	font-weight: bold;
+	font-style: italic;
 }
 
 @font-face {
@@ -10,18 +31,55 @@
 
 html {
     scroll-behavior: smooth;
+	min-height: 100vh;
 }
 
 body {
-    font-family: 'Quicksand';
-    background-image: url(../images/wbg.png);
-    color: #424242;
+    font-family: 'Ubuntu';
+    #background-color: #1c1c22;
+    color: #9d9ec3;
     text-align: center;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-size: 1.1em;
+    font-size: 1em;
+	animation: change-color-anim 60s linear infinite;
+}
+
+@keyframes change-color-anim {
+	0%,100%{
+		background-color: #1c1c22;
+	}
+	33%{
+		background-color: #20182A;
+	}
+	66%{
+		background-color: #1F1D22;
+	}
+}
+
+hr {
+	opacity: 30%;
+}
+
+span {
+	opacity: 40%;
+}
+
+u {
+	text-decoration:underline;
+	text-decoration-style: dotted;
+}
+
+u:hover, u:hover img {
+
+	display: inline;
+}
+
+.hover-image {
+	display: none;
+	position:absolute;
 }
 
 input:checked + div { display: none; }
@@ -30,12 +88,17 @@ header {
     padding: 20px;
 }
 
+.navmain {
+	display: flex;
+	flex-flow: row wrap;
+	width:80%;
+	margin: auto;
+	margin-top: 20px;
+	justify-content: center;
+}
+
 nav ul {
     list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 nav li {
@@ -53,7 +116,7 @@ nav button {
     padding: 1em 0.5em;
     cursor: pointer;
     float: left;
-    text-align:center;
+    text-align:left;
     width: 8em;
 }
 
@@ -65,7 +128,7 @@ main {
     padding: 20px;
     display: -ms-grid;
 	display: grid;
-	width: 100%;
+	width: 60%;
 	grid-auto-columns: 1fr;
 	grid-column-gap: 0;
 	grid-row-gap: 20px;
@@ -76,22 +139,29 @@ main {
 	justify-items: center;
 }
 
+footer {
+	padding: 20px 0;
+}
+
 .current-link::before {
-    content: "@";
+    content: "‎@";
+}
+
+.notcurrent-link::before {
+    content: "‎ ";
 }
 
 .onetab {
 	display: none;
 	position: relative;
     padding: 5px 25px 10px 25px;
-    margin-top: 50px;
-    background-color: RGBA(255,255,255,50%);
     width: 750px;
     max-width: 750px;
     text-align: left;
 }
 
 h2, h3 {
+	margin-top: 0;
     text-align: center;
     padding: 20px 0px 20px 0px;
 }
@@ -112,16 +182,6 @@ p {
 
 .tab-active {
 	display: block;
-}
-
-.dark-mode {
-    background-image: url(../images/bbg.png);
-    color: rgb(152, 43, 81);
-}
-
-.dark-card {
-    background-color: RGBA(0,0,0,50%);
-    border: #0b0b0b solid 1px;
 }
 
 .ico {
@@ -296,7 +356,7 @@ p {
     }
 
     .onetab {
-        max-width: 90vw;
+        max-width: 85vw;
     }
 
     .card {
@@ -311,6 +371,9 @@ p {
         height: auto;
         max-width: inherit;
     }
+	.navmain {
+		flex-flow: column wrap;
+	}
 }
 
 @media screen and (max-width: 350px) {
