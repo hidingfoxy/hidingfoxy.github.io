@@ -44,7 +44,6 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     font-size: 1em;
-	animation: change-color-anim 60s linear infinite;
 }
 
 @keyframes change-color-anim {
