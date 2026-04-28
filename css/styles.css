@@ -43,7 +43,41 @@ body {
     padding: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-size: 1em;
+    font-size: 0.9em;
+	animation: change-color-anim 60s linear infinite;
+}
+
+.buttonlink {
+	padding: 5px 15px;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	background-color: #000;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 9px 9px #2497cf;
+	display: flex;
+	width: 50%;
+	flex-flow: row;
+	align-items: center;
+}
+
+.buttonlink:hover {
+	box-shadow: 5px 5px #2497cf;
+	transform: translate(4px, 4px);
+}
+
+.buttoncontent {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+}
+
+.desc {
+	font-size: 10px;
+	opacity: 70%;
 }
 
 @keyframes change-color-anim {
@@ -116,7 +150,7 @@ nav button {
     cursor: pointer;
     float: left;
     text-align:left;
-    width: 8em;
+    width: 9em;
 }
 
 nav button:hover {
@@ -191,12 +225,27 @@ p {
 .contmenu {
     display: flex;
     width: 100%;
+	flex-direction: row;
     flex-wrap: wrap;
 }
 
 .contitem {
     margin: 0.3em;
     border: solid 2px transparent;
+}
+
+.viditem {
+	margin: 0.3em;
+    border: solid 2px transparent;
+	display: block;
+	overflow: hidden;
+	width: 11em;
+	height: 12em;
+}
+
+.viditem p{
+	margin: 0px;
+	font-size: 0.8em;
 }
 
 .contitem:hover {
